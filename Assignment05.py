@@ -39,16 +39,6 @@ try:
     # Read from the JSON file
     file = open(FILE_NAME, "r")
     students = json.load(file)
-    # file = open(FILE_NAME, "r")
-    # for row in file.readlines():
-    #     # Transform the data from the file
-    #     parts = row.strip().split(',')
-    #     student_first_name = parts[0]
-    #     student_last_name = parts[1]
-    #     course_name = parts[2]
-    #     student_data={'first_name':student_first_name,'last_name':student_last_name,'course_name':course_name}
-    #     # Load it into our collection (list of lists)
-    #     students.append(student_data)
     file.close()
 except FileNotFoundError:
     print('File not found. Creating a new file...')
